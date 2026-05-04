@@ -17,7 +17,7 @@ export function Hero() {
 
       <div className="relative mx-auto max-w-7xl w-full px-5 md:px-10 pb-16 md:pb-24 pt-32">
         <div className="max-w-2xl">
-          <p className="text-[10px] md:text-xs uppercase tracking-luxe text-foreground/70 mb-6 animate-in fade-in slide-in-from-bottom-2 duration-700">
+          <p className="text-[10px] md:text-xs uppercase tracking-luxe text-foreground/70 mb-6 animate-in fade-in slide-in-from-bottom-2 duration-700 rounded-full">
             Birch Acres · Kempton Park
           </p>
           <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.95] text-foreground animate-in fade-in slide-in-from-bottom-3 duration-1000">
@@ -35,7 +35,7 @@ export function Hero() {
           <div className="mt-9 flex flex-col sm:flex-row gap-3 animate-in fade-in duration-1000 delay-300">
             <a
               href="#book"
-              className="group inline-flex items-center justify-center gap-2 bg-foreground text-gold border border-gold px-8 py-4 text-[11px] uppercase tracking-luxe hover:bg-gold hover:text-foreground transition shadow-[var(--shadow-gold)]"
+              className="group inline-flex items-center justify-center gap-2 bg-foreground text-gold border border-gold px-8 py-4 text-[11px] uppercase tracking-luxe hover:bg-gold hover:text-foreground transition shadow-[var(--shadow-gold)] rounded-full"
             >
               Book Appointment
               <span className="transition-transform group-hover:translate-x-1">→</span>
@@ -44,7 +44,7 @@ export function Hero() {
               href={WHATSAPP}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 border border-gold/60 bg-background/40 backdrop-blur px-8 py-4 text-[11px] uppercase tracking-luxe text-foreground hover:bg-background/70 hover:border-gold transition"
+              className="inline-flex items-center justify-center gap-2 border border-gold/60 bg-background/40 backdrop-blur px-8 py-4 text-[11px] uppercase tracking-luxe text-foreground hover:bg-background/70 hover:border-gold transition rounded-full"
             >
               WhatsApp Us
             </a>
@@ -54,7 +54,7 @@ export function Hero() {
 
       {/* scroll cue */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2 text-foreground/60">
-        <span className="text-[10px] uppercase tracking-luxe">Scroll</span>
+        <span className="text-[10px] uppercase tracking-luxe rounded-full">Scroll</span>
         <span className="h-10 w-px bg-foreground/40 animate-pulse" />
       </div>
     </section>

@@ -11,7 +11,7 @@ export function Booking() {
       <div className="absolute inset-0 opacity-[0.06] [background-image:radial-gradient(circle_at_30%_20%,_oklch(0.9_0.04_25),transparent_50%),radial-gradient(circle_at_70%_80%,_oklch(0.9_0.04_25),transparent_50%)]" />
 
       <div className="relative mx-auto max-w-5xl px-5 md:px-10 text-center">
-        <p className="text-[10px] uppercase tracking-luxe text-gold mb-6">Reserve Your Moment</p>
+        <p className="text-[10px] uppercase tracking-luxe text-gold mb-6 rounded-full">Reserve Your Moment</p>
         <h2 className="font-display text-5xl md:text-7xl leading-[1.02]">
           Book your<br />
           <em className="italic font-normal text-gold-shine">Ella Nora</em> experience.
@@ -24,7 +24,7 @@ export function Booking() {
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3">
           <button
             onClick={() => setOpen(true)}
-            className="group inline-flex items-center gap-3 bg-gold text-foreground px-9 py-4 text-[11px] uppercase tracking-luxe hover:bg-gold-soft transition shadow-[var(--shadow-gold)]"
+            className="group inline-flex items-center gap-3 bg-gold text-foreground px-9 py-4 text-[11px] uppercase tracking-luxe hover:bg-gold-soft transition shadow-[var(--shadow-gold)] rounded-full"
           >
             Open Booking
             <span className="transition-transform group-hover:translate-x-1">→</span>
@@ -33,7 +33,7 @@ export function Booking() {
             href={SETMORE}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 border border-gold/50 px-9 py-4 text-[11px] uppercase tracking-luxe text-gold hover:bg-gold/10 transition"
+            className="inline-flex items-center gap-3 border border-gold/50 px-9 py-4 text-[11px] uppercase tracking-luxe text-gold hover:bg-gold/10 transition rounded-full"
           >
             Book in New Tab
           </a>
@@ -41,7 +41,7 @@ export function Booking() {
             href={WHATSAPP}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-6 py-4 text-[11px] uppercase tracking-luxe text-background/70 hover:text-background transition"
+            className="inline-flex items-center gap-3 px-6 py-4 text-[11px] uppercase tracking-luxe text-background/70 hover:text-background transition rounded-full"
           >
             Or WhatsApp Us
           </a>
@@ -55,7 +55,7 @@ export function Booking() {
           ].map((x) => (
             <div key={x.v} className="border-t border-gold/30 pt-5">
               <div className="font-display text-2xl md:text-3xl text-gold-shine">{x.k}</div>
-              <div className="text-[10px] uppercase tracking-luxe text-background/60 mt-1">{x.v}</div>
+              <div className="text-[10px] uppercase tracking-luxe text-background/60 mt-1 rounded-full">{x.v}</div>
             </div>
           ))}
         </div>
@@ -72,7 +72,7 @@ export function Booking() {
           >
             <div className="flex items-center justify-between px-6 py-4 border-b border-border bg-background">
               <div>
-                <div className="text-[10px] uppercase tracking-luxe text-gold-deep">Ella Nora · Booking</div>
+                <div className="text-[10px] uppercase tracking-luxe text-gold-deep rounded-full">Ella Nora · Booking</div>
                 <div className="font-display text-lg text-foreground">Choose your treatment</div>
               </div>
               <button

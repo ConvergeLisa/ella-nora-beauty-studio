@@ -7,7 +7,7 @@ export function Contact() {
     <section id="contact" className="py-24 md:py-36 bg-background">
       <div className="mx-auto max-w-7xl px-5 md:px-10 grid md:grid-cols-2 gap-12 md:gap-16 items-stretch">
         <div className="flex flex-col justify-center">
-          <p className="text-[10px] uppercase tracking-luxe text-gold-deep mb-5">Visit the Studio</p>
+          <p className="text-[10px] uppercase tracking-luxe text-gold-deep mb-5 rounded-full">Visit the Studio</p>
           <h2 className="font-display text-4xl md:text-6xl leading-[1.05]">
             Come <em className="italic font-normal text-gold-shine">experience</em> Ella Nora.
           </h2>
@@ -18,12 +18,12 @@ export function Contact() {
 
           <dl className="mt-10 space-y-6">
             <div>
-              <dt className="text-[10px] uppercase tracking-luxe text-muted-foreground">Address</dt>
+              <dt className="text-[10px] uppercase tracking-luxe text-muted-foreground rounded-full">Address</dt>
               <dd className="mt-1.5 font-display text-2xl text-foreground">12 Edelvalk Cres</dd>
               <dd className="text-foreground/70">Birch Acres, Kempton Park</dd>
             </div>
             <div>
-              <dt className="text-[10px] uppercase tracking-luxe text-muted-foreground">Phone</dt>
+              <dt className="text-[10px] uppercase tracking-luxe text-muted-foreground rounded-full">Phone</dt>
               <dd className="mt-1.5">
                 <a href="tel:+27648377293" className="font-display text-2xl text-foreground hover:text-gold transition">
                   +27 64 837 7293
@@ -31,7 +31,7 @@ export function Contact() {
               </dd>
             </div>
             <div>
-              <dt className="text-[10px] uppercase tracking-luxe text-muted-foreground">Email</dt>
+              <dt className="text-[10px] uppercase tracking-luxe text-muted-foreground rounded-full">Email</dt>
               <dd className="mt-1.5">
                 <a href="mailto:maphuti.summorepnp@gmail.com" className="text-foreground hover:text-gold transition">
                   maphuti.summorepnp@gmail.com
@@ -42,11 +42,11 @@ export function Contact() {
 
           <div className="mt-10 flex flex-wrap gap-3">
             <a href={WHATSAPP} target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-foreground text-gold border border-gold px-7 py-3.5 text-[11px] uppercase tracking-luxe hover:bg-gold hover:text-foreground transition">
+              className="inline-flex items-center gap-2 bg-foreground text-gold border border-gold px-7 py-3.5 text-[11px] uppercase tracking-luxe hover:bg-gold hover:text-foreground transition rounded-full">
               WhatsApp Us
             </a>
             <a href="#book"
-              className="inline-flex items-center gap-2 border border-gold/50 text-gold-deep px-7 py-3.5 text-[11px] uppercase tracking-luxe hover:bg-gold hover:text-foreground hover:border-gold transition">
+              className="inline-flex items-center gap-2 border border-gold/50 text-gold-deep px-7 py-3.5 text-[11px] uppercase tracking-luxe hover:bg-gold hover:text-foreground hover:border-gold transition rounded-full">
               Book Appointment
             </a>
           </div>
