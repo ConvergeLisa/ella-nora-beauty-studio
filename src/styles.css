@@ -48,6 +48,9 @@
   --color-champagne: var(--champagne);
   --color-noir: var(--noir);
   --color-rose-gold: var(--rose-gold);
+  --color-gold: var(--gold);
+  --color-gold-deep: var(--gold-deep);
+  --color-gold-soft: var(--gold-soft);
 }
 
 :root {
