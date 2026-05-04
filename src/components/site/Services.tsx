@@ -43,9 +43,9 @@ export function Services() {
     <section id="services" className="py-24 md:py-36 bg-nude/40">
       <div className="mx-auto max-w-7xl px-5 md:px-10">
         <div className="max-w-2xl mb-14 md:mb-20">
-          <p className="text-[10px] uppercase tracking-luxe text-rose-gold mb-5">The Treatments</p>
+          <p className="text-[10px] uppercase tracking-luxe text-gold-deep mb-5">The Treatments</p>
           <h2 className="font-display text-4xl md:text-6xl leading-[1.05]">
-            A curated menu, <em className="italic font-normal text-rose-gold">tailored to you</em>.
+            A curated menu, <em className="italic font-normal text-gold-shine">tailored to you</em>.
           </h2>
           <p className="mt-6 text-foreground/70 leading-relaxed">
             Every treatment at Ella Nora is delivered with precision and care — using trusted
@@ -57,7 +57,7 @@ export function Services() {
           {services.map((s, i) => (
             <article
               key={s.name}
-              className="group bg-background border border-border/60 overflow-hidden hover:shadow-[var(--shadow-elegant)] transition-all duration-500"
+              className="group bg-background border border-border/60 overflow-hidden hover:border-gold hover:shadow-[var(--shadow-gold)] transition-all duration-500"
             >
               <div className="relative overflow-hidden aspect-[4/5]">
                 <img
@@ -68,7 +68,7 @@ export function Services() {
                   loading="lazy"
                   className="h-full w-full object-cover transition-transform duration-[1.2s] group-hover:scale-105"
                 />
-                <div className="absolute top-4 left-4 text-[10px] uppercase tracking-luxe bg-background/90 backdrop-blur px-3 py-1.5">
+                <div className="absolute top-4 left-4 text-[10px] uppercase tracking-luxe bg-foreground text-gold px-3 py-1.5 border border-gold/40">
                   0{i + 1}
                 </div>
               </div>
@@ -77,7 +77,7 @@ export function Services() {
                 <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
                 <a
                   href="#book"
-                  className="mt-5 inline-flex items-center gap-2 text-[11px] uppercase tracking-luxe text-foreground border-b border-foreground/40 pb-1 hover:border-rose-gold hover:text-rose-gold transition"
+                  className="mt-5 inline-flex items-center gap-2 text-[11px] uppercase tracking-luxe text-gold-deep border-b border-gold/50 pb-1 hover:border-gold hover:text-gold transition"
                 >
                   Book this service →
                 </a>
