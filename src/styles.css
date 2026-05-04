@@ -63,10 +63,10 @@
   --nude: oklch(0.93 0.018 55);                   /* soft beige */
   --blush: oklch(0.89 0.035 20);                  /* soft pink */
   --champagne: oklch(0.86 0.06 82);               /* champagne */
-  --gold: oklch(0.82 0.17 88);                    /* bright luminous gold */
-  --gold-deep: oklch(0.66 0.14 80);                /* rich gold */
-  --gold-soft: oklch(0.93 0.08 88);                /* pale gold tint */
-  --rose-gold: oklch(0.82 0.17 88);                /* alias → bright gold */
+  --gold: oklch(0.78 0.075 82);                   /* refined champagne gold */
+  --gold-deep: oklch(0.62 0.07 72);                /* warm antique gold */
+  --gold-soft: oklch(0.94 0.035 84);               /* whisper gold tint */
+  --rose-gold: oklch(0.78 0.075 82);               /* alias → champagne gold */
   --noir: oklch(0.16 0.008 30);
 
   --card: oklch(0.98 0.01 55);
@@ -95,7 +95,7 @@
 
   --gradient-luxe: linear-gradient(135deg, oklch(0.96 0.015 55), oklch(0.91 0.03 25));
   --gradient-noir: linear-gradient(180deg, oklch(0.22 0.012 30), oklch(0.12 0.008 30));
-  --gradient-gold: linear-gradient(135deg, oklch(0.95 0.09 92) 0%, oklch(0.85 0.18 88) 35%, oklch(0.7 0.16 75) 65%, oklch(0.92 0.12 90) 100%);
+  --gradient-gold: linear-gradient(135deg, oklch(0.93 0.04 88) 0%, oklch(0.82 0.08 82) 40%, oklch(0.68 0.075 70) 70%, oklch(0.88 0.05 86) 100%);
   --shadow-soft: 0 20px 60px -20px oklch(0.4 0.05 30 / 0.18);
   --shadow-elegant: 0 30px 80px -30px oklch(0.4 0.05 30 / 0.25);
   --shadow-gold: 0 20px 50px -25px oklch(0.6 0.12 70 / 0.45);
