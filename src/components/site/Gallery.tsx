@@ -14,9 +14,9 @@ export function Gallery() {
       <div className="mx-auto max-w-7xl px-5 md:px-10">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12 md:mb-16">
           <div className="max-w-xl">
-            <p className="text-[10px] uppercase tracking-luxe text-rose-gold mb-5">@ellanorabeauty</p>
+            <p className="text-[10px] uppercase tracking-luxe text-gold-deep mb-5">@ellanorabeauty</p>
             <h2 className="font-display text-4xl md:text-6xl leading-[1.05]">
-              Loved by our <em className="italic font-normal text-rose-gold">clients</em>.
+              Loved by our <em className="italic font-normal text-gold-shine">clients</em>.
             </h2>
           </div>
           <div className="flex gap-3">
@@ -56,8 +56,8 @@ export function Gallery() {
             { q: "Maphuti is incredibly skilled and so warm. I leave glowing every single time.", n: "Lerato K." },
             { q: "Premium experience from start to finish. Hygiene, results and care — all immaculate.", n: "Zanele D." },
           ].map((t) => (
-            <figure key={t.n} className="bg-nude/30 p-8 md:p-10 border border-border/60">
-              <div className="text-rose-gold text-xl mb-4">★ ★ ★ ★ ★</div>
+            <figure key={t.n} className="bg-nude/30 p-8 md:p-10 border border-border/60 hover:border-gold/60 transition">
+              <div className="text-gold text-xl mb-4">★ ★ ★ ★ ★</div>
               <blockquote className="font-display text-xl md:text-2xl leading-snug text-foreground">
                 “{t.q}”
               </blockquote>

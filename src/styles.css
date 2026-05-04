@@ -48,6 +48,9 @@
   --color-champagne: var(--champagne);
   --color-noir: var(--noir);
   --color-rose-gold: var(--rose-gold);
+  --color-gold: var(--gold);
+  --color-gold-deep: var(--gold-deep);
+  --color-gold-soft: var(--gold-soft);
 }
 
 :root {
@@ -59,8 +62,11 @@
 
   --nude: oklch(0.93 0.018 55);                   /* soft beige */
   --blush: oklch(0.89 0.035 20);                  /* soft pink */
-  --champagne: oklch(0.82 0.04 75);               /* champagne */
-  --rose-gold: oklch(0.72 0.085 35);              /* rose gold accent */
+  --champagne: oklch(0.86 0.06 82);               /* champagne */
+  --gold: oklch(0.74 0.13 80);                    /* luminous mirrored gold */
+  --gold-deep: oklch(0.58 0.11 70);               /* antique gold */
+  --gold-soft: oklch(0.92 0.05 82);               /* pale gold tint */
+  --rose-gold: oklch(0.74 0.13 80);               /* alias → gold */
   --noir: oklch(0.16 0.008 30);
 
   --card: oklch(0.98 0.01 55);
@@ -85,12 +91,14 @@
 
   --border: oklch(0.88 0.015 50);
   --input: oklch(0.88 0.015 50);
-  --ring: oklch(0.72 0.085 35);
+  --ring: var(--gold);
 
   --gradient-luxe: linear-gradient(135deg, oklch(0.96 0.015 55), oklch(0.91 0.03 25));
   --gradient-noir: linear-gradient(180deg, oklch(0.22 0.012 30), oklch(0.12 0.008 30));
+  --gradient-gold: linear-gradient(135deg, oklch(0.92 0.07 85) 0%, oklch(0.78 0.13 80) 35%, oklch(0.6 0.12 65) 65%, oklch(0.85 0.09 82) 100%);
   --shadow-soft: 0 20px 60px -20px oklch(0.4 0.05 30 / 0.18);
   --shadow-elegant: 0 30px 80px -30px oklch(0.4 0.05 30 / 0.25);
+  --shadow-gold: 0 20px 50px -25px oklch(0.6 0.12 70 / 0.45);
 }
 
 .dark {
@@ -134,8 +142,26 @@
     font-weight: 300;
     letter-spacing: -0.01em;
   }
+
+  ::selection {
+    background-color: var(--gold);
+    color: var(--noir);
+  }
 }
 
 @utility tracking-luxe {
   letter-spacing: 0.32em;
 }
+
+@utility text-gold-shine {
+  background-image: var(--gradient-gold);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+@utility border-gold {
+  border-color: var(--gold);
+}
+
