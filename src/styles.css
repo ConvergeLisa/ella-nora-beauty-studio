@@ -62,8 +62,11 @@
 
   --nude: oklch(0.93 0.018 55);                   /* soft beige */
   --blush: oklch(0.89 0.035 20);                  /* soft pink */
-  --champagne: oklch(0.82 0.04 75);               /* champagne */
-  --rose-gold: oklch(0.72 0.085 35);              /* rose gold accent */
+  --champagne: oklch(0.86 0.06 82);               /* champagne */
+  --gold: oklch(0.74 0.13 80);                    /* luminous mirrored gold */
+  --gold-deep: oklch(0.58 0.11 70);               /* antique gold */
+  --gold-soft: oklch(0.92 0.05 82);               /* pale gold tint */
+  --rose-gold: oklch(0.74 0.13 80);               /* alias → gold */
   --noir: oklch(0.16 0.008 30);
 
   --card: oklch(0.98 0.01 55);
