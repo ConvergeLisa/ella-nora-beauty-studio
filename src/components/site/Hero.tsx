@@ -23,7 +23,7 @@ export function Hero() {
           <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.95] text-foreground animate-in fade-in slide-in-from-bottom-3 duration-1000">
             Beauty,
             <br />
-            <em className="not-italic font-normal italic text-rose-gold">redefined</em>
+            <em className="not-italic font-normal italic text-gold-shine">redefined</em>
             <br />
             for you.
           </h1>
@@ -35,7 +35,7 @@ export function Hero() {
           <div className="mt-9 flex flex-col sm:flex-row gap-3 animate-in fade-in duration-1000 delay-300">
             <a
               href="#book"
-              className="group inline-flex items-center justify-center gap-2 bg-foreground text-background px-8 py-4 text-[11px] uppercase tracking-luxe hover:bg-foreground/85 transition"
+              className="group inline-flex items-center justify-center gap-2 bg-foreground text-gold border border-gold px-8 py-4 text-[11px] uppercase tracking-luxe hover:bg-gold hover:text-foreground transition shadow-[var(--shadow-gold)]"
             >
               Book Appointment
               <span className="transition-transform group-hover:translate-x-1">→</span>
@@ -44,7 +44,7 @@ export function Hero() {
               href={WHATSAPP}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 border border-foreground/30 bg-background/40 backdrop-blur px-8 py-4 text-[11px] uppercase tracking-luxe text-foreground hover:bg-background/70 transition"
+              className="inline-flex items-center justify-center gap-2 border border-gold/60 bg-background/40 backdrop-blur px-8 py-4 text-[11px] uppercase tracking-luxe text-foreground hover:bg-background/70 hover:border-gold transition"
             >
               WhatsApp Us
             </a>

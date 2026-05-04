@@ -29,7 +29,7 @@ export function Nav() {
     >
       <div className="mx-auto max-w-7xl px-5 md:px-10 h-16 md:h-20 flex items-center justify-between">
         <a href="#top" className="flex items-baseline gap-2">
-          <span className="font-display text-xl md:text-2xl tracking-wide text-foreground">
+          <span className="font-display text-xl md:text-2xl tracking-wide text-gold-shine">
             Ella Nora
           </span>
           <span className="hidden md:inline text-[10px] tracking-luxe uppercase text-muted-foreground">
@@ -42,7 +42,7 @@ export function Nav() {
             <a
               key={l.href}
               href={l.href}
-              className="text-xs uppercase tracking-luxe text-muted-foreground hover:text-foreground transition-colors"
+              className="relative text-xs uppercase tracking-luxe text-muted-foreground hover:text-foreground transition-colors after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-gold hover:after:w-full after:transition-all"
             >
               {l.label}
             </a>
@@ -51,7 +51,7 @@ export function Nav() {
 
         <a
           href="#book"
-          className="hidden md:inline-flex items-center justify-center bg-foreground text-background px-6 py-2.5 text-[11px] uppercase tracking-luxe hover:bg-foreground/85 transition"
+          className="hidden md:inline-flex items-center justify-center bg-foreground text-gold border border-gold px-6 py-2.5 text-[11px] uppercase tracking-luxe hover:bg-gold hover:text-foreground transition"
         >
           Book Now
         </a>
