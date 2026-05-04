@@ -14,16 +14,16 @@ export function Gallery() {
       <div className="mx-auto max-w-7xl px-5 md:px-10">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12 md:mb-16">
           <div className="max-w-xl">
-            <p className="text-[10px] uppercase tracking-luxe text-gold-deep mb-5">@ellanorabeauty</p>
+            <p className="text-[10px] uppercase tracking-luxe text-gold-deep mb-5 rounded-full">@ellanorabeauty</p>
             <h2 className="font-display text-4xl md:text-6xl leading-[1.05]">
               Loved by our <em className="italic font-normal text-gold-shine">clients</em>.
             </h2>
           </div>
           <div className="flex gap-3">
             <a href="https://www.instagram.com/ellanorabeauty" target="_blank" rel="noopener noreferrer"
-              className="text-[11px] uppercase tracking-luxe border border-foreground/30 px-5 py-3 hover:bg-foreground hover:text-background transition">Instagram</a>
+              className="text-[11px] uppercase tracking-luxe border border-foreground/30 px-5 py-3 hover:bg-foreground hover:text-background transition rounded-full">Instagram</a>
             <a href="https://www.tiktok.com/@ellanorabeautybar" target="_blank" rel="noopener noreferrer"
-              className="text-[11px] uppercase tracking-luxe border border-foreground/30 px-5 py-3 hover:bg-foreground hover:text-background transition">TikTok</a>
+              className="text-[11px] uppercase tracking-luxe border border-foreground/30 px-5 py-3 hover:bg-foreground hover:text-background transition rounded-full">TikTok</a>
           </div>
         </div>
 
@@ -43,7 +43,7 @@ export function Gallery() {
                 className="h-full w-full object-cover transition-transform duration-[1.2s] group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/30 transition flex items-center justify-center">
-                <span className="opacity-0 group-hover:opacity-100 text-background text-xs uppercase tracking-luxe transition">View</span>
+                <span className="opacity-0 group-hover:opacity-100 text-background text-xs uppercase tracking-luxe transition rounded-full">View</span>
               </div>
             </a>
           ))}
@@ -61,7 +61,7 @@ export function Gallery() {
               <blockquote className="font-display text-xl md:text-2xl leading-snug text-foreground">
                 “{t.q}”
               </blockquote>
-              <figcaption className="mt-6 text-[10px] uppercase tracking-luxe text-muted-foreground">— {t.n}</figcaption>
+              <figcaption className="mt-6 text-[10px] uppercase tracking-luxe text-muted-foreground rounded-full">— {t.n}</figcaption>
             </figure>
           ))}
         </div>
