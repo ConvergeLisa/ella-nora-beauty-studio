@@ -45,11 +45,23 @@ export function Footer() {
 
         <div>
           <div className="text-[10px] uppercase tracking-luxe text-gold/80 mb-4">Connect</div>
-          <ul className="space-y-2.5 text-sm">
-            <li><a href="https://www.instagram.com/ellanorabeauty" target="_blank" rel="noopener noreferrer" className="hover:text-background">Instagram</a></li>
-            <li><a href="https://www.tiktok.com/@ellanorabeautybar" target="_blank" rel="noopener noreferrer" className="hover:text-background">TikTok</a></li>
-            <li><a href="https://www.facebook.com/profile.php?id=100090546100622" target="_blank" rel="noopener noreferrer" className="hover:text-background">Facebook</a></li>
-            <li><a href="https://wa.me/27648377293" target="_blank" rel="noopener noreferrer" className="hover:text-background">WhatsApp</a></li>
+          <ul className="space-y-2">
+            {socials.map(({ label, href, Icon }) => (
+              <li key={label}>
+                <a
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="group inline-flex items-center gap-3 text-sm text-background/80 hover:text-gold transition-colors"
+                >
+                  <span className="inline-flex items-center justify-center h-9 w-9 rounded-full border border-gold/25 bg-background/5 text-gold transition group-hover:border-gold group-hover:bg-gold/10 group-hover:scale-105">
+                    <Icon className="h-4 w-4" />
+                  </span>
+                  <span>{label}</span>
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
