@@ -6,4 +6,11 @@
 // You can pass additional config via defineConfig({ vite: { ... } }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
-export default defineConfig();
+// When deploying to Vercel, set DEPLOY_TARGET=vercel (Vercel auto-detects this via vercel.json).
+// Otherwise the default Cloudflare Worker target is used (for Lovable's preview/publish).
+const isVercel = process.env.DEPLOY_TARGET === "vercel" || !!process.env.VERCEL;
+
+export default defineConfig({
+  cloudflare: isVercel ? false : undefined,
+  tanstackStart: isVercel ? { target: "vercel" } : undefined,
+});
