@@ -90,6 +90,21 @@ export default async function handler(req, res) {
   // Minimal package.json so Node treats index.mjs/server.js as ESM
   await writeFile(path.join(fnDir, "package.json"), JSON.stringify({ type: "module" }));
 
+  // 2b. Trace and copy required node_modules dependencies for the SSR handler
+  const entryFile = path.join(fnDir, "server", "server.js");
+  const { fileList, warnings } = await nodeFileTrace([entryFile], { base: root });
+  for (const w of warnings) console.warn("[nft]", w.message || w);
+  for (const file of fileList) {
+    const src = path.join(root, file);
+    const dest = path.join(fnDir, file);
+    await mkdir(path.dirname(dest), { recursive: true });
+    try {
+      await cp(src, dest, { recursive: true });
+    } catch (e) {
+      // Skip files that may have moved (symlinks etc.)
+    }
+  }
+
   // 3. Routing config: serve static first, fall back to SSR
   const config = {
     version: 3,
