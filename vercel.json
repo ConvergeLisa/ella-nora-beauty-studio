@@ -1,7 +1,10 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
-  "buildCommand": "DEPLOY_TARGET=vercel vite build",
+  "buildCommand": "vite build",
   "installCommand": "npm install",
-  "outputDirectory": ".vercel/output"
+  "outputDirectory": "dist/client",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
