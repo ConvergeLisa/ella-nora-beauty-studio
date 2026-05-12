@@ -1,8 +1,9 @@
 // Adapts the TanStack Start Vite build output to the Vercel Build Output API v3.
 // Reads dist/client (static assets) and dist/server/server.js (Web fetch handler)
 // and emits .vercel/output with a Node serverless function that runs the SSR handler.
-import { cp, mkdir, rm, writeFile, readFile, stat } from "node:fs/promises";
+import { cp, mkdir, rm, writeFile, readFile, stat, symlink } from "node:fs/promises";
 import path from "node:path";
+import { nodeFileTrace } from "@vercel/nft";
 
 const root = process.cwd();
 const dist = path.join(root, "dist");
